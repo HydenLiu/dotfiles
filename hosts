@@ -1,5 +1,5 @@
 #-------- my hosts --------
-# vim /etc/hosts
+# sudo vim /etc/hosts
 
 185.199.108.133 raw.githubusercontent.com
 185.199.109.133 raw.githubusercontent.com

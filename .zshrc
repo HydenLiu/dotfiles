@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # Node Package Manager
 # -------------------------------- #
 # https://github.com/antfu/ni
+# npm i -g @antfu/ni
 
 alias nio="ni --prefer-offline"
 alias s="nr start"
