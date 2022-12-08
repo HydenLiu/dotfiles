@@ -2,6 +2,6 @@
 
 * [.zshrc](./.zshrc)
 * [hosts](./hosts)
-
-### Check Also
+* [vscode-setting/settings.json](./vscode-setting/settings.json)
+* [vscode-setting/keybindings.json](./vscode-setting/keybindings.json)
 * [sunupdong/eslint-config](https://github.com/sunupdong/eslint-config)
