@@ -84,7 +84,6 @@
     "Grammarly",
     "eslint"
   ],
-  // 别名提示
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src"
   },
@@ -123,7 +122,6 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-  // 添加 vue 支持
   "eslint.validate": [
     "javascript",
     "javascriptreact"
