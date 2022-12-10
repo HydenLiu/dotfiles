@@ -111,7 +111,7 @@ alias ghci='gh run list -L 1'
 # `~/code` for my projects
 # -------------------------------- #
 
-function code() {
+function cc() {
   cd ~/code/$1
 }
 
