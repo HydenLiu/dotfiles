@@ -79,7 +79,7 @@ alias gm='git merge'
 
 alias grb='git rebase'
 alias grbom='git rebase origin/master'
-alias grbc='git rebase --continue'
+alias grbc='git add . && git rebase --continue'
 
 alias gl='git log'
 alias glo='git log --oneline --graph'
