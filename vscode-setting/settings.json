@@ -5,10 +5,12 @@
     "editor.selectionBackground": "#79edf56c"
   },
   "editor.minimap.enabled": false,
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
   "editor.detectIndentation": false,
+  // 重新设定tabsize
   "editor.tabSize": 2,
   "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.find.addExtraSpaceOnTop": false,
@@ -29,26 +31,21 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  // #去掉代码结尾的分号
   "prettier.semi": false,
+  // #使用带引号替代双引号
   "prettier.singleQuote": true,
+  // #让函数(名)和后面的括号之间加个空格
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "css.validate": false,
   "stylelint.enable": true,
-  "stylelint.validate": [
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "vue",
-    "sass"
-  ],
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
   "[css]": {
     "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-    // "editor.defaultFormatter": "Vue.volar"
   },
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
@@ -64,7 +61,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotShowInfoMsg": true, // 两个选择器中是否换行
   "emmet.includeLanguages": {
     "postcss": "css",
     "javascript": "javascriptreact",
@@ -75,15 +72,9 @@
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
+  // 别名提示
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src"
   },
@@ -122,10 +113,8 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact"
-  ],
+  // 添加 vue 支持
+  "eslint.validate": ["javascript", "javascriptreact"],
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -182,35 +171,40 @@
   "i18n-ally.displayLanguage": "en",
   "i18n-ally.ignoredLocales": [],
   "volar.autoCompleteRefs": false,
-  "volar.codeLens.pugTools": false,
-  "volar.codeLens.scriptSetupTools": true,
   "volar.completion.preferredTagNameCase": "pascal",
   "windicss.enableCodeFolding": false,
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   // "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Theme",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.wordBasedSuggestions": false,
   "editor.stickyScroll.enabled": true,
   "svelte.enable-ts-plugin": true,
-  "svelte.plugin.svelte.note-new-transformation": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.inlayHints.enumMemberValues.enabled": true,
+  // "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "workbench.productIconTheme": "icons-carbon",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "typeChallenges.workspaceFolder": "/Users/dong/.typeChallenges",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hant": true
   }
 }
