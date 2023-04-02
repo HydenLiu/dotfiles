@@ -185,15 +185,16 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "javascript.inlayHints.enumMemberValues.enabled": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterTypes.enabled": true,
-  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
-  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
-  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "workbench.productIconTheme": "icons-carbon",
   "[jsonc]": {
