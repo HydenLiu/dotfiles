@@ -45,6 +45,7 @@ alias re="nr release"
 
 # Use github/hub
 # https://github.com/github/hub
+# brew install hub
 alias git=hub
 
 # Go to project root
@@ -127,3 +128,9 @@ function serve() {
     live-server $1
   fi
 }
+
+# nvm
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
