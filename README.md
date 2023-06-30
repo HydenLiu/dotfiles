@@ -4,7 +4,7 @@
 * [hosts](./hosts)
 * [vscode-setting/settings.json](./vscode-setting/settings.json)
 * [vscode-setting/keybindings.json](./vscode-setting/keybindings.json)
-* [HydenLiu/eslint-config](https://github.com/HydenLiu/eslint-config)
+* [HydenLiu/lint-config](https://github.com/HydenLiu/lint-config)
 
 ## other
 * [nvm](https://github.com/nvm-sh/nvm)
