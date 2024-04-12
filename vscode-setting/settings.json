@@ -9,6 +9,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -16,6 +19,12 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
@@ -38,12 +47,19 @@
     "pinia",
     "hyden",
     "vueuse",
-    "Swiper"
+    "Swiper",
+    "antd"
   ],
+  "codeium.enableConfig": {
+    "*": true,
+    "ignore": true,
+    "markdown": true,
+    "postcss": true,
+    "properties": true
+  },
   "css.lint.hexColorLength": "ignore",
   "css.validate": false,
   "debug.onTaskErrors": "debugAnyway",
-  "diffEditor.ignoreTrimWhitespace": false,
   "dotLog.config": [
     {
       "description": "quick console.log result",
@@ -56,9 +72,9 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -68,9 +84,10 @@
   "editor.fontFamily": "Input Mono, Fira Code, monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.glyphMargin": true,
-  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairs": true,
   "editor.hover.sticky": true,
   "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true
@@ -84,7 +101,7 @@
     "zh-hant": true
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "markdown": "javascriptreact",
@@ -117,13 +134,8 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "plaintext": true,
-    "scminput": false,
-    "yaml": true
-  },
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "gitlens.ai.experimental.provider": "openai",
   "gitlens.menus": {
     "editor": {
       "blame": false,
@@ -177,13 +189,17 @@
   // #让函数(名)和后面的括号之间加个空格
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.inlayHints.parameterTypes.enabled": true,
+  "leetcode.defaultLanguage": "rust",
+  "leetcode.endpoint": "leetcode",
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.showDescription": "Both",
+  "leetcode.workspaceFolder": "/Users/hyden/code/hyden_code/leetcode/src",
   "liveServer.settings.donotShowInfoMsg": true, // 两个选择器中是否换行
   "liveServer.settings.donotVerifyTags": true,
+  "lldb.suppressUpdateNotifications": true,
   "npm.packageManager": "npm",
-  // 别名提示
-  "path-intellisense.mappings": {
-    "@": "${workspaceRoot}/src"
-  },
   // #去掉代码结尾的分号
   "prettier.semi": false,
   // #使用带引号替代双引号
@@ -208,6 +224,9 @@
     "**/yarn.lock": true
   },
   "search.followSymlinks": false,
+  "settingsSync.ignoredExtensions": [
+    "zhile-io.cocopilot"
+  ],
   "stylelint.enable": true,
   "stylelint.validate": [
     "css",
@@ -228,15 +247,15 @@
   "volar.autoCompleteRefs": false,
   "volar.completion.preferredTagNameCase": "pascal",
   "windicss.enableCodeFolding": false,
+  "window.commandCenter": false,
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#79edf56c",
-    "editor.selectionHighlightBorder": "#4ad8e2"
+    "editor.selectionHighlightBorder": "#f5f106"
   },
-  "workbench.colorTheme": "Theme",
+  "workbench.colorTheme": "Theme Darker",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.fontAliasing": "antialiased",
@@ -244,5 +263,7 @@
   "workbench.list.smoothScrolling": true,
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.expandMode": "singleClick"
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.layoutControl.enabled": false,
+  "redhat.telemetry.enabled": true
 }
