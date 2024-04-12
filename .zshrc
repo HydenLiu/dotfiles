@@ -73,6 +73,8 @@ alias gcob='git checkout -b'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
+# Delete all Git branches except the currently active branch
+alias gbDA='git branch | grep -v "^*" | xargs git branch -D'
 alias gbm='git branch -m'
 alias gbM='git branch -M'
 
@@ -101,9 +103,15 @@ alias gfrb='git fetch origin && git rebase origin/master'
 alias gxn='git clean -dn'
 alias gx='git clean -df'
 
+# Copy the hash value of the most recent commit
 alias gsha='git rev-parse HEAD | pbcopy'
 
-alias ghci='gh run list -L 1'
+# -------------------------------- #
+# Npm
+# -------------------------------- #
+alias  nstb='npm config set registry https://registry.npm.taobao.org'
+alias  nsn='npm config set registry https://registry.npmjs.org'
+
 
 # -------------------------------- #
 # Directories
@@ -116,18 +124,23 @@ function cc() {
   cd ~/code/$1
 }
 
+function ccc() {
+  cd ~/code/company_code/$1
+}
+
+function ccg() {
+  cd ~/code/github/$1
+}
 
 function dir() {
   mkdir $1 && cd $1
 }
 
-function serve() {
-  if [[ -z $1 ]] then
-    live-server dist
-  else
-    live-server $1
-  fi
+# get project branch
+function gbp(){
+  node ~/code/company_code/getBranch.js
 }
+
 
 # nvm
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
