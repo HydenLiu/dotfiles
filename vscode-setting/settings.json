@@ -24,6 +24,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -39,7 +42,6 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.words": [
     "Slidev",
@@ -48,7 +50,8 @@
     "hyden",
     "vueuse",
     "Swiper",
-    "antd"
+    "antd",
+    "leetcode"
   ],
   "codeium.enableConfig": {
     "*": true,
@@ -60,25 +63,17 @@
   "css.lint.hexColorLength": "ignore",
   "css.validate": false,
   "debug.onTaskErrors": "debugAnyway",
-  "dotLog.config": [
-    {
-      "description": "quick console.log result",
-      "format": "console.log",
-      "hideName": true,
-      "trigger": "log"
-    }
-  ],
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
-  // vscode默认启用了根据文件类型自动设置tabsize的选项
   "editor.detectIndentation": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "Input Mono, Fira Code, monospace",
@@ -93,10 +88,20 @@
     "enabled": true
   },
   "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
   "editor.stickyScroll.enabled": true,
-  // "editor.multiCursorModifier": "ctrlCmd",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
   "editor.unicodeHighlight.allowedLocales": {
     "zh-hant": true
   },
@@ -130,12 +135,14 @@
   ],
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.css": "postcss",
+    ".env*": "dotenv"
+  },
   "files.autoSave": "onWindowChange",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
-  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
-  "gitlens.ai.experimental.provider": "openai",
   "gitlens.menus": {
     "editor": {
       "blame": false,
@@ -186,7 +193,6 @@
     "google-cn",
     "google"
   ],
-  // #让函数(名)和后面的括号之间加个空格
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.inlayHints.parameterTypes.enabled": true,
   "leetcode.defaultLanguage": "rust",
@@ -196,19 +202,20 @@
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.showDescription": "Both",
   "leetcode.workspaceFolder": "/Users/hyden/code/hyden_code/leetcode/src",
-  "liveServer.settings.donotShowInfoMsg": true, // 两个选择器中是否换行
+  "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
   "lldb.suppressUpdateNotifications": true,
   "npm.packageManager": "npm",
-  // #去掉代码结尾的分号
   "prettier.semi": false,
-  // #使用带引号替代双引号
   "prettier.singleQuote": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "redhat.telemetry.enabled": true,
   "scm.diffDecorationsGutterWidth": 2,
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
     "**/.nuxt": true,
+    "**/.next": true,
     "**/.output": true,
     "**/.pnpm": true,
     "**/.vscode": true,
@@ -241,29 +248,25 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  // "typeChallenges.workspaceFolder": "/Users/hyden/code/hyden_code/type-challenges-docs/.vitepress/theme/typeChallenges",
   "typeChallenges.workspaceFolder": "/Users/hyden/code/hyden_code/type-challenges-docs/.vitepress/theme/typeChallenges",
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "volar.autoCompleteRefs": false,
-  "volar.completion.preferredTagNameCase": "pascal",
   "windicss.enableCodeFolding": false,
   "window.commandCenter": false,
   "window.dialogStyle": "custom",
-  "window.nativeTabs": true, // this is great, macOS only
+  "window.nativeTabs": true,
   "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#79edf56c",
     "editor.selectionHighlightBorder": "#f5f106"
   },
-  "workbench.colorTheme": "Theme Darker",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.layoutControl.enabled": false,
-  "redhat.telemetry.enabled": true
+  "workbench.tree.expandMode": "singleClick"
 }
