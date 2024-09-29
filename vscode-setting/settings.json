@@ -25,7 +25,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -63,11 +63,11 @@
   "css.lint.hexColorLength": "ignore",
   "css.validate": false,
   "debug.onTaskErrors": "debugAnyway",
+  "diffEditor.ignoreTrimWhitespace": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
@@ -75,7 +75,6 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": false,
-  "editor.find.addExtraSpaceOnTop": false,
   "editor.fontFamily": "Input Mono, Fira Code, monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.glyphMargin": true,
@@ -88,9 +87,10 @@
     "enabled": true
   },
   "editor.smoothScrolling": true,
-  "editor.snippetSuggestions": "top",
+  // "editor.snippetSuggestions": "top",
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -214,8 +214,8 @@
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
-    "**/.nuxt": true,
     "**/.next": true,
+    "**/.nuxt": true,
     "**/.output": true,
     "**/.pnpm": true,
     "**/.vscode": true,
@@ -231,6 +231,7 @@
     "**/yarn.lock": true
   },
   "search.followSymlinks": false,
+  "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredExtensions": [
     "zhile-io.cocopilot"
   ],
@@ -248,22 +249,32 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
   "typeChallenges.workspaceFolder": "/Users/hyden/code/hyden_code/type-challenges-docs/.vitepress/theme/typeChallenges",
   "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.tsserver.watchOptions": {
+    "excludeDirectories": [
+      "**/node_modules"
+    ],
+    "fallbackPolling": "dynamicPriorityPolling",
+    "synchronousWatchDirectory": true,
+    "watchDirectory": "useFsEvents",
+    "watchFile": "useFsEventsOnParentDirectory"
+  },
   "windicss.enableCodeFolding": false,
   "window.commandCenter": false,
   "window.dialogStyle": "custom",
   "window.nativeTabs": true,
   "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#79edf56c",
+    "editor.selectionBackground": "#ff00ff6c",
     "editor.selectionHighlightBorder": "#f5f106"
   },
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.fontAliasing": "antialiased",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.productIconTheme": "icons-carbon",
