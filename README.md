@@ -8,7 +8,7 @@
 
 ## other
 * [nvm](https://github.com/nvm-sh/nvm)
-
+* [Chinese Mirror](./chinese_mirror.md)
 * [oh-my-zsh](https://ohmyz.sh/)
 
 * [My Font](https://input.djr.com/)
